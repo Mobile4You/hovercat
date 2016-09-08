@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  payload: MyString
+  header: MyString
+  routing_key: MyString
+  exchange: MyString
+  retry_count: 1
+
+two:
+  payload: MyString
+  header: MyString
+  routing_key: MyString
+  exchange: MyString
+  retry_count: 1

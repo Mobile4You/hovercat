@@ -1,0 +1,727 @@
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateHovercatMessageRetries (20160908180349)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "hovercat_message_retries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "payload" text, "header" varchar, "routing_key" varchar, "exchange" varchar, "retry_count" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160908180349"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", 2016-09-08 18:12:09 UTC], ["updated_at", 2016-09-08 18:12:09 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "hovercat_message_retries"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHovercat::MessageRetry Load (0.1ms)[0m  [1m[34mSELECT  "hovercat_message_retries".* FROM "hovercat_message_retries" ORDER BY "hovercat_message_retries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:15:25 UTC], ["updated_at", 2016-09-08 18:15:25 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 18:15:25 UTC], ["updated_at", 2016-09-08 18:15:25 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:15:25 UTC], ["updated_at", 2016-09-08 18:15:25 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "hovercat_message_retries"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:15:25 UTC], ["updated_at", 2016-09-08 18:15:25 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mHovercat::MessageRetry Load (0.2ms)[0m  [1m[34mSELECT  "hovercat_message_retries".* FROM "hovercat_message_retries" ORDER BY "hovercat_message_retries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:16:07 UTC], ["updated_at", 2016-09-08 18:16:07 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 18:16:07 UTC], ["updated_at", 2016-09-08 18:16:07 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:16:07 UTC], ["updated_at", 2016-09-08 18:16:07 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "hovercat_message_retries"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:16:07 UTC], ["updated_at", 2016-09-08 18:16:07 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mHovercat::MessageRetry Load (0.1ms)[0m  [1m[34mSELECT  "hovercat_message_retries".* FROM "hovercat_message_retries" ORDER BY "hovercat_message_retries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateHovercatMessageRetries (20160908180349)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "hovercat_message_retries"[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20160908180349"]]
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateHovercatMessageRetries (20160908180349)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "hovercat_message_retries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "payload" text, "header" text, "routing_key" varchar, "exchange" varchar, "retry_count" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160908180349"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:18:18 UTC], ["updated_at", 2016-09-08 18:18:18 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 18:18:18 UTC], ["updated_at", 2016-09-08 18:18:18 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:18:18 UTC], ["updated_at", 2016-09-08 18:18:18 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "hovercat_message_retries"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:18:18 UTC], ["updated_at", 2016-09-08 18:18:18 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mHovercat::MessageRetry Load (0.1ms)[0m  [1m[34mSELECT  "hovercat_message_retries".* FROM "hovercat_message_retries" ORDER BY "hovercat_message_retries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:18:56 UTC], ["updated_at", 2016-09-08 18:18:56 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 18:18:56 UTC], ["updated_at", 2016-09-08 18:18:56 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:18:56 UTC], ["updated_at", 2016-09-08 18:18:56 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "hovercat_message_retries"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:18:56 UTC], ["updated_at", 2016-09-08 18:18:56 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mHovercat::MessageRetry Load (0.2ms)[0m  [1m[34mSELECT  "hovercat_message_retries".* FROM "hovercat_message_retries" ORDER BY "hovercat_message_retries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:21:57 UTC], ["updated_at", 2016-09-08 18:21:57 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 18:21:57 UTC], ["updated_at", 2016-09-08 18:21:57 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:21:57 UTC], ["updated_at", 2016-09-08 18:21:57 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "hovercat_message_retries"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:21:57 UTC], ["updated_at", 2016-09-08 18:21:57 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mHovercat::MessageRetry Load (0.1ms)[0m  [1m[34mSELECT  "hovercat_message_retries".* FROM "hovercat_message_retries" ORDER BY "hovercat_message_retries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateHovercatMessageRetries (20160908180349)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "hovercat_message_retries"[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20160908180349"]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateHovercatMessageRetries (20160908180349)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "hovercat_message_retries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "payload" text, "header" text, "routing_key" varchar, "exchange" varchar, "retry_count" integer DEFAULT 0, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160908180349"]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:34:05 UTC], ["updated_at", 2016-09-08 18:34:05 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 18:34:05 UTC], ["updated_at", 2016-09-08 18:34:05 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:34:05 UTC], ["updated_at", 2016-09-08 18:34:05 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "hovercat_message_retries"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:34:05 UTC], ["updated_at", 2016-09-08 18:34:05 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mHovercat::MessageRetry Load (0.1ms)[0m  [1m[34mSELECT  "hovercat_message_retries".* FROM "hovercat_message_retries" ORDER BY "hovercat_message_retries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:35:56 UTC], ["updated_at", 2016-09-08 18:35:56 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 18:35:56 UTC], ["updated_at", 2016-09-08 18:35:56 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:35:56 UTC], ["updated_at", 2016-09-08 18:35:56 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "hovercat_message_retries"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:35:56 UTC], ["updated_at", 2016-09-08 18:35:56 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mHovercat::MessageRetry Load (0.2ms)[0m  [1m[34mSELECT  "hovercat_message_retries".* FROM "hovercat_message_retries" ORDER BY "hovercat_message_retries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:36:45 UTC], ["updated_at", 2016-09-08 18:36:45 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 18:36:45 UTC], ["updated_at", 2016-09-08 18:36:45 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:36:45 UTC], ["updated_at", 2016-09-08 18:36:45 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "hovercat_message_retries"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:36:45 UTC], ["updated_at", 2016-09-08 18:36:45 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mHovercat::MessageRetry Load (0.2ms)[0m  [1m[34mSELECT  "hovercat_message_retries".* FROM "hovercat_message_retries" ORDER BY "hovercat_message_retries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 18:36:45 UTC], ["updated_at", 2016-09-08 18:36:45 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "hovercat_message_retries"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 18:36:45 UTC], ["updated_at", 2016-09-08 18:36:45 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mHovercat::MessageRetry Load (0.0ms)[0m  [1m[34mSELECT  "hovercat_message_retries".* FROM "hovercat_message_retries" ORDER BY "hovercat_message_retries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 18:37:31 UTC], ["updated_at", 2016-09-08 18:37:31 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "hovercat_message_retries"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 18:37:31 UTC], ["updated_at", 2016-09-08 18:37:31 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mHovercat::MessageRetry Load (0.1ms)[0m  [1m[34mSELECT  "hovercat_message_retries".* FROM "hovercat_message_retries" ORDER BY "hovercat_message_retries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:37:38 UTC], ["updated_at", 2016-09-08 18:37:38 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 18:37:38 UTC], ["updated_at", 2016-09-08 18:37:38 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:37:38 UTC], ["updated_at", 2016-09-08 18:37:38 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "hovercat_message_retries"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:37:38 UTC], ["updated_at", 2016-09-08 18:37:38 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mHovercat::MessageRetry Load (0.1ms)[0m  [1m[34mSELECT  "hovercat_message_retries".* FROM "hovercat_message_retries" ORDER BY "hovercat_message_retries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 18:37:38 UTC], ["updated_at", 2016-09-08 18:37:38 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "hovercat_message_retries"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 18:37:38 UTC], ["updated_at", 2016-09-08 18:37:38 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mHovercat::MessageRetry Load (0.0ms)[0m  [1m[34mSELECT  "hovercat_message_retries".* FROM "hovercat_message_retries" ORDER BY "hovercat_message_retries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:48:37 UTC], ["updated_at", 2016-09-08 18:48:37 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 18:48:37 UTC], ["updated_at", 2016-09-08 18:48:37 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:48:37 UTC], ["updated_at", 2016-09-08 18:48:37 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "hovercat_message_retries"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:48:37 UTC], ["updated_at", 2016-09-08 18:48:37 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mHovercat::MessageRetry Load (0.1ms)[0m  [1m[34mSELECT  "hovercat_message_retries".* FROM "hovercat_message_retries" ORDER BY "hovercat_message_retries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 18:48:37 UTC], ["updated_at", 2016-09-08 18:48:37 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "hovercat_message_retries"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 18:48:37 UTC], ["updated_at", 2016-09-08 18:48:37 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mHovercat::MessageRetry Load (0.0ms)[0m  [1m[34mSELECT  "hovercat_message_retries".* FROM "hovercat_message_retries" ORDER BY "hovercat_message_retries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:49:00 UTC], ["updated_at", 2016-09-08 18:49:00 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 18:49:00 UTC], ["updated_at", 2016-09-08 18:49:00 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:49:00 UTC], ["updated_at", 2016-09-08 18:49:00 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "hovercat_message_retries"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:49:00 UTC], ["updated_at", 2016-09-08 18:49:00 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mHovercat::MessageRetry Load (0.1ms)[0m  [1m[34mSELECT  "hovercat_message_retries".* FROM "hovercat_message_retries" ORDER BY "hovercat_message_retries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 18:49:00 UTC], ["updated_at", 2016-09-08 18:49:00 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "hovercat_message_retries"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 18:49:00 UTC], ["updated_at", 2016-09-08 18:49:00 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mHovercat::MessageRetry Load (0.0ms)[0m  [1m[34mSELECT  "hovercat_message_retries".* FROM "hovercat_message_retries" ORDER BY "hovercat_message_retries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:52:53 UTC], ["updated_at", 2016-09-08 18:52:53 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 18:52:53 UTC], ["updated_at", 2016-09-08 18:52:53 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:52:53 UTC], ["updated_at", 2016-09-08 18:52:53 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "hovercat_message_retries"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 18:52:53 UTC], ["updated_at", 2016-09-08 18:52:53 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mHovercat::MessageRetry Load (0.1ms)[0m  [1m[34mSELECT  "hovercat_message_retries".* FROM "hovercat_message_retries" ORDER BY "hovercat_message_retries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 18:52:53 UTC], ["updated_at", 2016-09-08 18:52:53 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "hovercat_message_retries"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 18:52:53 UTC], ["updated_at", 2016-09-08 18:52:53 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mHovercat::MessageRetry Load (0.0ms)[0m  [1m[34mSELECT  "hovercat_message_retries".* FROM "hovercat_message_retries" ORDER BY "hovercat_message_retries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 19:00:22 UTC], ["updated_at", 2016-09-08 19:00:22 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 19:00:22 UTC], ["updated_at", 2016-09-08 19:00:22 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 19:00:22 UTC], ["updated_at", 2016-09-08 19:00:22 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "hovercat_message_retries"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 19:00:22 UTC], ["updated_at", 2016-09-08 19:00:22 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mHovercat::MessageRetry Load (0.1ms)[0m  [1m[34mSELECT  "hovercat_message_retries".* FROM "hovercat_message_retries" ORDER BY "hovercat_message_retries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 19:00:22 UTC], ["updated_at", 2016-09-08 19:00:22 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "hovercat_message_retries"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 19:00:22 UTC], ["updated_at", 2016-09-08 19:00:22 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mHovercat::MessageRetry Load (0.0ms)[0m  [1m[34mSELECT  "hovercat_message_retries".* FROM "hovercat_message_retries" ORDER BY "hovercat_message_retries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 19:00:58 UTC], ["updated_at", 2016-09-08 19:00:58 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 19:00:58 UTC], ["updated_at", 2016-09-08 19:00:58 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 19:00:58 UTC], ["updated_at", 2016-09-08 19:00:58 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "hovercat_message_retries"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 19:00:58 UTC], ["updated_at", 2016-09-08 19:00:58 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mHovercat::MessageRetry Load (0.2ms)[0m  [1m[34mSELECT  "hovercat_message_retries".* FROM "hovercat_message_retries" ORDER BY "hovercat_message_retries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 19:00:58 UTC], ["updated_at", 2016-09-08 19:00:58 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "hovercat_message_retries"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 19:00:58 UTC], ["updated_at", 2016-09-08 19:00:58 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mHovercat::MessageRetry Load (0.0ms)[0m  [1m[34mSELECT  "hovercat_message_retries".* FROM "hovercat_message_retries" ORDER BY "hovercat_message_retries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 19:00:58 UTC], ["updated_at", 2016-09-08 19:00:58 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 19:01:35 UTC], ["updated_at", 2016-09-08 19:01:35 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 19:06:11 UTC], ["updated_at", 2016-09-08 19:06:11 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 19:06:11 UTC], ["updated_at", 2016-09-08 19:06:11 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 19:06:11 UTC], ["updated_at", 2016-09-08 19:06:11 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "hovercat_message_retries"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 19:06:11 UTC], ["updated_at", 2016-09-08 19:06:11 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mHovercat::MessageRetry Load (0.1ms)[0m  [1m[34mSELECT  "hovercat_message_retries".* FROM "hovercat_message_retries" ORDER BY "hovercat_message_retries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 19:06:11 UTC], ["updated_at", 2016-09-08 19:06:11 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "hovercat_message_retries"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 19:06:11 UTC], ["updated_at", 2016-09-08 19:06:11 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mHovercat::MessageRetry Load (0.0ms)[0m  [1m[34mSELECT  "hovercat_message_retries".* FROM "hovercat_message_retries" ORDER BY "hovercat_message_retries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 19:08:27 UTC], ["updated_at", 2016-09-08 19:08:27 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 19:08:27 UTC], ["updated_at", 2016-09-08 19:08:27 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 19:08:27 UTC], ["updated_at", 2016-09-08 19:08:27 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "hovercat_message_retries"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 19:08:27 UTC], ["updated_at", 2016-09-08 19:08:27 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mHovercat::MessageRetry Load (0.2ms)[0m  [1m[34mSELECT  "hovercat_message_retries".* FROM "hovercat_message_retries" ORDER BY "hovercat_message_retries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 19:08:27 UTC], ["updated_at", 2016-09-08 19:08:27 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "hovercat_message_retries"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 19:08:27 UTC], ["updated_at", 2016-09-08 19:08:27 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mHovercat::MessageRetry Load (0.0ms)[0m  [1m[34mSELECT  "hovercat_message_retries".* FROM "hovercat_message_retries" ORDER BY "hovercat_message_retries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 20:56:29 UTC], ["updated_at", 2016-09-08 20:56:29 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 20:56:29 UTC], ["updated_at", 2016-09-08 20:56:29 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 20:56:29 UTC], ["updated_at", 2016-09-08 20:56:29 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "hovercat_message_retries"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{}"], ["routing_key", "message_routing_key"], ["exchange", "amq.topic"], ["created_at", 2016-09-08 20:56:29 UTC], ["updated_at", 2016-09-08 20:56:29 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mHovercat::MessageRetry Load (0.2ms)[0m  [1m[34mSELECT  "hovercat_message_retries".* FROM "hovercat_message_retries" ORDER BY "hovercat_message_retries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 20:56:29 UTC], ["updated_at", 2016-09-08 20:56:29 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "hovercat_message_retries"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "hovercat_message_retries" ("payload", "header", "routing_key", "exchange", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payload", "message_json"], ["header", "{:content_type=>\"Application/json\"}"], ["routing_key", "message_routing_key"], ["exchange", "test.exchange"], ["created_at", 2016-09-08 20:56:29 UTC], ["updated_at", 2016-09-08 20:56:29 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mHovercat::MessageRetry Load (0.0ms)[0m  [1m[34mSELECT  "hovercat_message_retries".* FROM "hovercat_message_retries" ORDER BY "hovercat_message_retries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
