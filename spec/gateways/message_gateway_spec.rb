@@ -29,7 +29,6 @@ RSpec.describe Hovercat::MessageGateway do
   context 'Only event passed and successfully stored to retry' do
     let(:header) { nil }
     let(:exchange) { nil }
-    let(:message_retry) { Hovercat::MessageRetry.new(payload: message.to_json, header: {}, routing_key: message.routing_key, exchange: 'amq.topic') }
     before do
       expect(publisher).to receive(:publish).with(payload: message.to_json, header: {}, routing_key: message.routing_key, exchange: 'amq.topic').and_return(false)
       subject
@@ -51,7 +50,6 @@ RSpec.describe Hovercat::MessageGateway do
   context 'All params set and successfully stored to retry' do
     let(:header) { {content_type: 'Application/json'} }
     let(:exchange) { 'test.exchange' }
-    let(:message_retry) { Hovercat::MessageRetry.new(payload: message.to_json, header: header, routing_key: message.routing_key, exchange: exchange) }
     before do
       expect(publisher).to receive(:publish).with(payload: message.to_json, header: header, routing_key: message.routing_key, exchange: exchange).and_return(false)
       subject
@@ -73,7 +71,6 @@ RSpec.describe Hovercat::MessageGateway do
   context 'All params set and failed to store message retry' do
     let(:header) { {content_type: 'Application/json'} }
     let(:exchange) { 'test.exchange' }
-    let(:message_retry) { Hovercat::MessageRetry.new(payload: message.to_json, header: header, routing_key: message.routing_key, exchange: exchange) }
     before do
       expect(publisher).to receive(:publish).with(payload: message.to_json, header: header, routing_key: message.routing_key, exchange: exchange).and_return(false)
 
