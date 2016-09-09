@@ -1,5 +1,10 @@
-require "hovercat/engine"
+require 'hovercat/engine'
+require 'hovercat/config'
 
 module Hovercat
-  # Your code goes here...
+  CONFIG = HoverCat::Config.new.configs
+
+  def self.config(opts = {})
+    CONFIG.merge!(opts)
+  end
 end
