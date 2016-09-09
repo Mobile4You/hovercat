@@ -1,29 +1,31 @@
 module HoverCat
   class Config
-    class << self
-      attr_accessor :exchange
+    attr_reader :configs
 
-      attr_accessor :host
-      attr_accessor :port
-      attr_accessor :vhost
-
-      attr_accessor :user
-      attr_accessor :password
-      attr_accessor :retry_attempts
-      attr_accessor :log_file
-
-      def reset
-        @exchange = 'thundercats.events'
-        @host = 'localhost'
-        @port = '5672'
-        @vhost = '/'
-        @user = 'guest'
-        @password = 'guest'
-        @log_file = 'hovercat.log'
-        @retry_attempts = '3'
-      end
+    def initialize
+      reset
     end
 
-    reset # Set default values for configuration options on load
+    def merge!(hash)
+      @configs.merge!(hash)
+    end
+
+    private
+    def reset
+      @configs = DEFAULT_CONFIG
+    end
+
+    DEFAULT_CONFIG = {
+        exchange: 'thundercats.events',
+        host: 'localhost',
+        port: '5672',
+        vhost: '/',
+        user: 'guest',
+        password: 'guest',
+        log_file: 'hovercat.log',
+        retry_attempts: '3',
+        retry_delay_in_s: '600',
+        retry_number_of_messages: '500'
+    }
   end
 end
