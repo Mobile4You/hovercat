@@ -33,7 +33,7 @@ describe HoverCat::Config do
     it { expect(config[:retry_number_of_messages]).to eql('500') }
   end
 
-  context 'client empty configs' do
+  context 'client custom configs' do
     let(:new_configs) { {exchange: 'test.events', user: 'new_user', password: 'new_pass'} }
 
     before do
