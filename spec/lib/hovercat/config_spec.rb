@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-describe HoverCat::Config do
+describe Hovercat::Config do
 
-  let(:config) { HoverCat::Config.new.configs }
+  let(:config) { Hovercat::Config.new.configs }
 
   context 'default configs' do
     it { expect(config[:exchange]).to eql('thundercats.events') }
@@ -12,9 +12,9 @@ describe HoverCat::Config do
     it { expect(config[:user]).to eql('guest') }
     it { expect(config[:password]).to eql('guest') }
     it { expect(config[:log_file]).to eql('hovercat.log') }
-    it { expect(config[:retry_attempts]).to eql('3') }
-    it { expect(config[:retry_delay_in_s]).to eql('600') }
-    it { expect(config[:retry_number_of_messages]).to eql('500') }
+    it { expect(config[:retry_attempts]).to eql(3) }
+    it { expect(config[:retry_delay_in_s]).to eql(600) }
+    it { expect(config[:retry_number_of_messages]).to eql(500) }
   end
 
   context 'client empty configs' do
@@ -28,9 +28,9 @@ describe HoverCat::Config do
     it { expect(config[:user]).to eql('guest') }
     it { expect(config[:password]).to eql('guest') }
     it { expect(config[:log_file]).to eql('hovercat.log') }
-    it { expect(config[:retry_attempts]).to eql('3') }
-    it { expect(config[:retry_delay_in_s]).to eql('600') }
-    it { expect(config[:retry_number_of_messages]).to eql('500') }
+    it { expect(config[:retry_attempts]).to eql(3) }
+    it { expect(config[:retry_delay_in_s]).to eql(600) }
+    it { expect(config[:retry_number_of_messages]).to eql(500) }
   end
 
   context 'client custom configs' do
@@ -46,8 +46,8 @@ describe HoverCat::Config do
     it { expect(config[:user]).to eql(new_configs[:user]) }
     it { expect(config[:password]).to eql(new_configs[:password]) }
     it { expect(config[:log_file]).to eql('hovercat.log') }
-    it { expect(config[:retry_attempts]).to eql('3') }
-    it { expect(config[:retry_delay_in_s]).to eql('600') }
-    it { expect(config[:retry_number_of_messages]).to eql('500') }
+    it { expect(config[:retry_attempts]).to eql(3) }
+    it { expect(config[:retry_delay_in_s]).to eql(600) }
+    it { expect(config[:retry_number_of_messages]).to eql(500) }
   end
 end

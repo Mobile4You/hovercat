@@ -5,14 +5,10 @@ module Hovercat
     def perform(publisher)
       publisher = publisher || Hovercat::Publisher.new
       begin
-        messages = Hovercat::MessageRetry.order('updated_at').limit(Hovercat::CONFIG[:retry_number_of_messages])
-        messages.each do |message|
-          message.with_lock do
-            publisher.republish(payload: message.payload, header: message.header, routing_key: message.routing_key, exchange: message.exchange).process_message(message)
-          end
-        end
+        Hovercat::RetryMessagesSender.new.send(publisher)
+      rescue StandardError
       ensure
-        self.class.set(wait: Hovercat::CONFIG[:retry_delay_in_s].second).perform_later(publisher)
+        self.class.set(wait: Hovercat::CONFIG[:retry_delay_in_s].second).perform_later()
       end
     end
   end

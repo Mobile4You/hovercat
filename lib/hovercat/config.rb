@@ -1,4 +1,4 @@
-module HoverCat
+module Hovercat
   class Config
     attr_reader :configs
 
