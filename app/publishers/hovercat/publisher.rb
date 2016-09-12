@@ -1,13 +1,12 @@
 module Hovercat
   class Publisher
     def publish(params)
-
     end
 
     def republish(params)
-      response = HoverCat::RepublishFailureResponse.new
+      response = Hovercat::RepublishFailureResponse.new
       if publish(params)
-        response = HoverCat::RepublishSuccessfullyResponse.new
+        response = Hovercat::RepublishSuccessfullyResponse.new
       end
       response
     end
