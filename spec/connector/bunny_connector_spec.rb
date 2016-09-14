@@ -5,7 +5,7 @@ RSpec.describe Hovercat::BunnyConnector do
   let(:header) { {content_type: 'Application/json'} }
   let(:exchange) { 'test.exchange' }
   let(:routing_key) { 'routing.key' }
-  let(:payload) { {param1: 'param1', param1: 'param1'}.as_json }
+  let(:payload) { {param1: 'param1', param2: 'param2'}.as_json }
   let(:bunny_mock) { BunnyMock }
   let(:connector) { Hovercat::BunnyConnector.new(bunny_mock) }
 

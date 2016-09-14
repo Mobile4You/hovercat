@@ -11,7 +11,7 @@ RSpec.describe Hovercat::MessageGateway do
     let(:exchange) { nil }
 
     it do
-      expect(publisher).to receive(:publish).with(payload: message.to_json, header: {}, routing_key: message.routing_key, exchange: Hovercat::CONFIG[:exchange])
+      expect(publisher).to receive(:publish).with(payload: message.to_json, header: {}, routing_key: message.routing_key, exchange: Hovercat::CONFIG[:exchange]).and_return(Hovercat::PublishSuccessfullyResponse.new)
       subject
     end
   end
@@ -21,7 +21,7 @@ RSpec.describe Hovercat::MessageGateway do
     let(:exchange) { 'test.exchange' }
 
     it do
-      expect(publisher).to receive(:publish).with(payload: message.to_json, header: header, routing_key: message.routing_key, exchange: exchange)
+      expect(publisher).to receive(:publish).with(payload: message.to_json, header: header, routing_key: message.routing_key, exchange: exchange).and_return(Hovercat::PublishSuccessfullyResponse.new)
       subject
     end
   end
@@ -30,7 +30,7 @@ RSpec.describe Hovercat::MessageGateway do
     let(:header) { nil }
     let(:exchange) { nil }
     before do
-      expect(publisher).to receive(:publish).with(payload: message.to_json, header: {}, routing_key: message.routing_key, exchange: Hovercat::CONFIG[:exchange]).and_return(false)
+      expect(publisher).to receive(:publish).with(payload: message.to_json, header: {}, routing_key: message.routing_key, exchange: Hovercat::CONFIG[:exchange]).and_return(Hovercat::PublishFailureResponse.new)
       subject
     end
 
@@ -51,7 +51,7 @@ RSpec.describe Hovercat::MessageGateway do
     let(:header) { {content_type: 'Application/json'} }
     let(:exchange) { 'test.exchange' }
     before do
-      expect(publisher).to receive(:publish).with(payload: message.to_json, header: header, routing_key: message.routing_key, exchange: exchange).and_return(false)
+      expect(publisher).to receive(:publish).with(payload: message.to_json, header: header, routing_key: message.routing_key, exchange: exchange).and_return(Hovercat::PublishFailureResponse.new)
       subject
     end
 

@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe Hovercat::RepublishSuccessfullyResponse do
+RSpec.describe Hovercat::PublishSuccessfullyResponse do
 
-  subject! { Hovercat::RepublishSuccessfullyResponse.new.process_message(message) }
+  subject! { Hovercat::PublishSuccessfullyResponse.new.process_message(message) }
 
   context 'message removed' do
     let(:message) { create(:message_retry) }

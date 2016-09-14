@@ -1,5 +1,5 @@
 module Hovercat
-  class RepublishSuccessfullyResponse
+  class PublishSuccessfullyResponse
 
     def process_message(message)
       message.destroy!

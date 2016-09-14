@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe Hovercat::RepublishFailureResponse do
+RSpec.describe Hovercat::PublishFailureResponse do
 
-  subject { Hovercat::RepublishFailureResponse.new.process_message(message) }
+  subject { Hovercat::PublishFailureResponse.new.process_message(message) }
 
   context 'When retry count below limit' do
     let(:message) { create(:message_retry) }
