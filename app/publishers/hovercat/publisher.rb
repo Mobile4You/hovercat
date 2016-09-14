@@ -5,15 +5,15 @@ module Hovercat
     end
 
     def publish(params)
-      result = true
+      response = Hovercat::PublishSuccessfullyResponse.new
 
       begin
         @connector.publish(params)
       rescue Hovercat::UnexpectedError
-        result = false
+        response = Hovercat::PublishFailureResponse.new
       end
 
-      result
+      response
     end
   end
 end

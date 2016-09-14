@@ -1,4 +1,4 @@
-module HoverCat
+module Hovercat
   class Config
     attr_reader :configs
 
@@ -23,9 +23,9 @@ module HoverCat
         user: 'guest',
         password: 'guest',
         log_file: 'hovercat.log',
-        retry_attempts: '3',
-        retry_delay_in_s: '600',
-        retry_number_of_messages: '500'
+        retry_attempts: 3,
+        retry_delay_in_s: 600,
+        retry_number_of_messages: 500
     }
   end
 end

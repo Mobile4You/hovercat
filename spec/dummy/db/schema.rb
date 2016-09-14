@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160908180349) do
+ActiveRecord::Schema.define(version: 20160912133801) do
 
   create_table "hovercat_message_retries", force: :cascade do |t|
     t.text     "payload"
     t.text     "header"
     t.string   "routing_key"
     t.string   "exchange"
-    t.integer  "retry_count", default: 0
+    t.integer  "retry_count", default: 0, null: false
     t.datetime "created_at",              null: false
     t.datetime "updated_at",              null: false
   end
