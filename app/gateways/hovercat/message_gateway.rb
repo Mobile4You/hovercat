@@ -2,7 +2,7 @@ module Hovercat
   class MessageGateway
     def send(params)
       header = params[:header] || {}
-      exchange = params[:exchange] || 'amq.topic'
+      exchange = params[:exchange] || Hovercat::CONFIG[:exchange]
       publisher = params[:publisher] || Hovercat::Publisher.new
       message = params[:message]
 
