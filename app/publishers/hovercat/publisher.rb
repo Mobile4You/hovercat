@@ -1,24 +1,15 @@
 module Hovercat
-  require 'bunny'
   class Publisher
-    def publish(params)
-      Hovercat::CONFIG[:host]
+    def initialize(connector = Hovercat::BunnyConnector.new)
+      @connector = connector
+    end
 
+    def publish(params)
       result = true
 
       begin
-        connection = Bunny.new(host: Hovercat::CONFIG[:host],
-                               port: Hovercat::CONFIG[:port],
-                               vhost: Hovercat::CONFIG[:vhost],
-                               user: Hovercat::CONFIG[:user],
-                               password: Hovercat::CONFIG[:password])
-        connection.start
-        channel = connection.create_channel
-        exchange = channel.topic(params[:exchange] || Hovercat::CONFIG[:exchange], durable: true)
-
-        result = exchange.publish(params[:payload], routing_key: params[:routing_key], headers: params[:header])
-        connection.close
-      rescue Bunny::Exception, Bunny::ClientTimeout, Bunny::ConnectionTimeout
+        @connector.publish(params)
+      rescue Hovercat::UnexpectedError
         result = false
       end
 
