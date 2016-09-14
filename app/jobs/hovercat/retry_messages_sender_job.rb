@@ -2,7 +2,7 @@ module Hovercat
   class RetryMessagesSenderJob < ApplicationJob
     queue_as :default
 
-    def perform(publisher)
+    def perform(publisher = Hovercat::Publisher.new)
       publisher = publisher || Hovercat::Publisher.new
       begin
         Hovercat::RetryMessagesSender.new.send(publisher)
