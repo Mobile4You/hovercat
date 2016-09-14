@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(version: 20160912133801) do
     t.string   "routing_key"
     t.string   "exchange"
     t.integer  "retry_count", default: 0, null: false
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
