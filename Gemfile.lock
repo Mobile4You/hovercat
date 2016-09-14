@@ -46,7 +46,7 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     amq-protocol (2.0.1)
-    arel (7.1.1)
+    arel (7.1.2)
     builder (3.2.2)
     bunny (2.5.1)
       amq-protocol (>= 2.0.1)
