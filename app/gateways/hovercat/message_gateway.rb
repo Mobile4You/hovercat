@@ -1,8 +1,8 @@
 module Hovercat
   class MessageGateway
-    def send(params) # def send(header = {}, exchange = 'amq.topic', publisher = Hovercat::Publisher.new, message)
+    def send(params)
       header = params[:header] || {}
-      exchange = params[:exchange] || 'amq.topic'
+      exchange = params[:exchange] || Hovercat::CONFIG[:exchange]
       publisher = params[:publisher] || Hovercat::Publisher.new
       message = params[:message]
 
@@ -11,8 +11,8 @@ module Hovercat
         unless publisher.publish(message_attributes)
           Hovercat::MessageRetry.create!(message_attributes)
         end
-      rescue StandardError
-        raise Hovercat::UnableToSendMessageError.new
+      rescue StandardError => e
+        raise Hovercat::UnableToSendMessageError.new(e)
       end
     end
   end

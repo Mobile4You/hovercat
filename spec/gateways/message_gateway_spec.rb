@@ -11,7 +11,7 @@ RSpec.describe Hovercat::MessageGateway do
     let(:exchange) { nil }
 
     it do
-      expect(publisher).to receive(:publish).with(payload: message.to_json, header: {}, routing_key: message.routing_key, exchange: 'amq.topic')
+      expect(publisher).to receive(:publish).with(payload: message.to_json, header: {}, routing_key: message.routing_key, exchange: Hovercat::CONFIG[:exchange])
       subject
     end
   end
@@ -30,7 +30,7 @@ RSpec.describe Hovercat::MessageGateway do
     let(:header) { nil }
     let(:exchange) { nil }
     before do
-      expect(publisher).to receive(:publish).with(payload: message.to_json, header: {}, routing_key: message.routing_key, exchange: 'amq.topic').and_return(false)
+      expect(publisher).to receive(:publish).with(payload: message.to_json, header: {}, routing_key: message.routing_key, exchange: Hovercat::CONFIG[:exchange]).and_return(false)
       subject
     end
 
@@ -41,7 +41,7 @@ RSpec.describe Hovercat::MessageGateway do
       expect(result_message_retry.payload).to eql(message.to_json)
       expect(result_message_retry.header).to eql('{}')
       expect(result_message_retry.routing_key).to eql(message.routing_key)
-      expect(result_message_retry.exchange).to eql('amq.topic')
+      expect(result_message_retry.exchange).to eql(Hovercat::CONFIG[:exchange])
       expect(result_message_retry.retry_count).to eql(0)
     end
 

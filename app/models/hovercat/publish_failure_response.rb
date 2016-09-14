@@ -6,5 +6,9 @@ module Hovercat
         Hovercat::TeamNotifierGateway.new.notify(message)
       end
     end
+
+    def ok?
+      false
+    end
   end
 end
