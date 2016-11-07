@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     hovercat (0.2.4)
-      bunny (= 2.5.1)
+      bunny (>= 2.5.1, <= 2.6.0)
       rails (>= 4.2.5.1, <= 5.0.0.1)
 
 GEM
@@ -46,7 +46,7 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     amq-protocol (2.0.1)
-    arel (7.1.2)
+    arel (7.1.4)
     builder (3.2.2)
     bunny (2.5.1)
       amq-protocol (>= 2.0.1)
