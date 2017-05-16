@@ -1,4 +1,4 @@
-class CreateHovercatMessageRetries < ActiveRecord::Migration
+class CreateHovercatMessageRetries < ActiveRecord::Migration[4.2]
   def change
     create_table :hovercat_message_retries do |t|
       t.text :payload

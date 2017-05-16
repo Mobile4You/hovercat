@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    hovercat (0.2.7)
+    hovercat (0.2.8)
       bunny (>= 2.5.1, <= 2.6.0)
       rails (>= 4.2.5.1)
 
@@ -45,7 +45,7 @@ GEM
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    amq-protocol (2.0.1)
+    amq-protocol (2.1.0)
     arel (7.1.4)
     builder (3.2.3)
     bunny (2.6.0)
@@ -58,12 +58,12 @@ GEM
     factory_girl_rails (4.8.0)
       factory_girl (~> 4.8.0)
       railties (>= 3.0.0)
-    globalid (0.3.7)
-      activesupport (>= 4.1.0)
+    globalid (0.4.0)
+      activesupport (>= 4.2.0)
     i18n (0.7.0)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
-    mail (2.6.4)
+    mail (2.6.5)
       mime-types (>= 1.16, < 4)
     method_source (0.8.2)
     mime-types (3.1)
@@ -144,4 +144,4 @@ DEPENDENCIES
   sqlite3
 
 BUNDLED WITH
-   1.13.6
+   1.14.6
