@@ -12,7 +12,7 @@ module Hovercat
 
     private
     def reset
-      @configs = DEFAULT_CONFIG
+      @configs = DEFAULT_CONFIG.clone
     end
 
     DEFAULT_CONFIG = {
