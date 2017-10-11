@@ -1,7 +1,7 @@
 module Hovercat
   class BunnyConnector
     def initialize(gem = Bunny)
-      @connection = gem.new(hosts: Hovercat::CONFIG[:host],
+      @connection = gem.new(host: Hovercat::CONFIG[:host],
                               port: Hovercat::CONFIG[:port],
                               vhost: Hovercat::CONFIG[:vhost],
                               user: Hovercat::CONFIG[:user],

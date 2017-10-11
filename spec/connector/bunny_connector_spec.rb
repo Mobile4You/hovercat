@@ -14,7 +14,7 @@ RSpec.describe Hovercat::BunnyConnector do
 
     it { expect(bunny_mock.connection.open?).to be_truthy }
 
-    it { expect(bunny_mock.connection.initialize_params).to include(hosts: Hovercat::CONFIG[:host]) }
+    it { expect(bunny_mock.connection.initialize_params).to include(host: Hovercat::CONFIG[:host]) }
     it { expect(bunny_mock.connection.initialize_params).to include(port: Hovercat::CONFIG[:port]) }
     it { expect(bunny_mock.connection.initialize_params).to include(vhost: Hovercat::CONFIG[:vhost]) }
     it { expect(bunny_mock.connection.initialize_params).to include(user: Hovercat::CONFIG[:user]) }
