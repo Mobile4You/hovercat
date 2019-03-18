@@ -12,7 +12,15 @@ RabbitMQ `3.3+`.
 
 ## Installation & Bundler Dependency
 
-gem install hovercat
+```sh
+$ gem gem install hovercat
+```
+
+If you prefer install in your `Gemfile`:
+
+```rb
+gem 'hovercat'
+```
 
 ### Getting Started
 
@@ -25,6 +33,21 @@ Memory
 You can generate de configuration file running the following commands:
 
 hovercat redis_store
+or
 hovercat memory_store
 
-It will genereate a configuration file like this
+It will genereate a configuration file like this:
+
+```rb
+hovercat:
+  rabbitmq:
+    host: 'localhost'
+    port: 5672
+    exchange: ''
+    vhost: '/'
+    user: 'guest'
+    password: 'guest'
+  retries_in_rabbit_mq:
+    retry_attempts: 3
+    retry_delay_in_seconds: 600
+```
