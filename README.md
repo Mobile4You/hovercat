@@ -32,9 +32,13 @@ Memory
 
 You can generate de configuration file running the following commands:
 
-hovercat redis_store
+```sh
+$ hovercat redis_store
+```
 or
-hovercat memory_store
+```sh
+$ hovercat memory_store
+```
 
 It will genereate a configuration file like this:
 
