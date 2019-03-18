@@ -1,0 +1,11 @@
+hovercat:
+  rabbitmq:
+    host: 'localhost'
+    port: 5672
+    exchange: ''
+    vhost: '/'
+    user: 'guest'
+    password: 'guest'
+  retries_in_rabbit_mq:
+    retry_attempts: 3
+    retry_delay_in_seconds: 600

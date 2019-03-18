@@ -1,17 +1,9 @@
-require 'factory_girl_rails'
-RSpec.configure do |config|
-  config.expect_with :rspec do |expectations|
-    expectations.include_chain_clauses_in_custom_matcher_descriptions = true
-    config.include FactoryGirl::Syntax::Methods
-  end
+# frozen_string_literal: true
 
-  config.mock_with :rspec do |mocks|
-    mocks.verify_partial_doubles = true
-  end
+require 'hovercat/support/factory_bot'
+require 'factory_bot'
+require 'hovercat/factories/factories'
 
-  config.before(:all) do
-    Hovercat.config()
-  end
-
-  config.shared_context_metadata_behavior = :apply_to_host_groups
+RSpec.configure do |_config|
+  Dir[File.dirname(__FILE__) + '/support/**/*.rb'].each { |f| require f }
 end

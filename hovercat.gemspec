@@ -1,7 +1,10 @@
-$:.push File.expand_path("../lib", __FILE__)
+# frozen_string_literal: true
+
+lib = File.expand_path('lib', __dir__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 # Maintain your gem's version:
-require "hovercat/version"
+require 'hovercat/version'
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
@@ -14,14 +17,26 @@ Gem::Specification.new do |s|
   s.description = 'RabbitMQ connection abstraction with a retry handle'
   s.license     = 'MIT'
 
-  s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
+  s.files         = `git ls-files`.split($INPUT_RECORD_SEPARATOR)
+  s.executables   = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  s.test_files    = s.files.grep(%r{^(test|spec|features)/})
+  s.require_paths = ['lib']
 
-  s.add_dependency 'rails', '>= 4.2.5.1'
+  s.add_development_dependency 'bundler', '~> 1.16'
+  s.add_development_dependency 'ci_reporter_rspec'
+  s.add_development_dependency 'factory_bot'
+  s.add_development_dependency 'fakefs'
+  s.add_development_dependency 'foreman'
+  s.add_development_dependency 'rake'
+  s.add_development_dependency 'rspec', '~> 3.0'
+  s.add_development_dependency 'rubocop'
+  s.add_development_dependency 'rubocop-checkstyle_formatter'
+  s.add_development_dependency 'simplecov'
+  s.add_development_dependency 'simplecov-rcov'
+  s.add_development_dependency 'webmock'
+
   s.add_dependency 'bunny', '>= 2.5.1', '<= 2.6.0'
-
-  s.add_development_dependency 'sqlite3'
-  s.add_development_dependency 'rspec-rails'
-  s.add_development_dependency 'factory_girl_rails'
-
-  s.test_files = Dir["spec/**/*"]
+  s.add_dependency 'sidekiq'
+  s.add_dependency 'sucker_punch', '~> 2.0'
+  s.add_dependency 'thor'
 end
