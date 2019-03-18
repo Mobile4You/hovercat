@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'thor'
-require 'hovercat'
 require 'hovercat/version'
 require 'hovercat/generators/memory_config_generator'
 require 'hovercat/generators/redis_config_generator'

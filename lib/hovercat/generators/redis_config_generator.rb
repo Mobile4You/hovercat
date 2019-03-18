@@ -10,7 +10,7 @@ module Hovercat
       end
 
       def create_redis_config
-        template 'templates/hovercat_redis_storage.yml.erb', 'config/hovercat_memory.yml'
+        template 'templates/hovercat_redis_storage.yml.erb', 'config/hovercat_redis_storage.yml'
       end
     end
   end

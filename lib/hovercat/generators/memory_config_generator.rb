@@ -10,7 +10,7 @@ module Hovercat
       end
 
       def create_memory_config
-        template 'templates/hovercat_memory.yml.erb', 'config/hovercat_redis.yml'
+        template 'templates/hovercat_memory_storage.yml.erb', 'config/hovercat_memory_storage.yml'
       end
     end
   end
