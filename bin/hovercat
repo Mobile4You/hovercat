@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'hovercat/cli/hovercat_command'
+
+Hovercat::Cli::HovercatCommand.start

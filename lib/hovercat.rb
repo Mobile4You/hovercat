@@ -1,10 +1,15 @@
-require 'hovercat/engine'
-require 'hovercat/config'
+# frozen_string_literal: true
+
+require 'hovercat/version'
+require 'hovercat/gateways/message_gateway'
+require 'hovercat/helpers/configuration'
 
 module Hovercat
-  CONFIG = Hovercat::Config.new.configs
+  CONFIG = Hovercat::Helpers::Configuration.new.configuration
 
-  def self.config(opts = {})
-    CONFIG.merge!(opts.inject({}) { |memo, (k, v)| memo[k.to_sym] = v; memo })
+  class Sender
+    def self.publish(params)
+      Hovercat::Gateways::MessageGateway.send(params)
+    end
   end
 end
