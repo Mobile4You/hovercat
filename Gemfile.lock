@@ -108,5 +108,3 @@ DEPENDENCIES
   simplecov-rcov
   webmock
 
-BUNDLED WITH
-   1.17.0
