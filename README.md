@@ -54,10 +54,14 @@ bundle update hovercat
 from:
 ```ruby
 Hovercat::Message
+Hovercat::MessageGateway
+Hovercat::UnableToSendMessageError
 ```
 to:
 ```ruby
 Hovercat::Models::Message
+Hovercat::Gateways::MessageGateway
+Hovercat::Errors::UnableToSendMessageError
 ```
 
 ## Contributing
