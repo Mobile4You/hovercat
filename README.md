@@ -2,7 +2,7 @@
 [![codebeat badge](https://codebeat.co/badges/fc8d0613-78eb-45a4-83d8-197a167115cd)](https://codebeat.co/projects/github-com-mobile4you-hovercat)
 [![Build Status](https://travis-ci.org/Mobile4You/hovercat.svg?branch=master)](https://travis-ci.org/Mobile4You/hovercat)
 
-# Hovercat, a client for rabbitmq 
+# Hovercat is a client for Rabbitmq 
 Your focuses on ease of use. It focus on 
 to retry send message when message broker is down
 
@@ -12,35 +12,23 @@ RabbitMQ `3.3+`.
 
 ## Installation & Bundler Dependency
 
-```sh
-$ gem gem install hovercat
-```
-
-If you prefer install in your `Gemfile`:
+Install in your `Gemfile`:
 
 ```rb
-gem 'hovercat'
+gem 'hovercat', git: 'https://github.com/Mobile4You/hovercat.git'
 ```
 
 ### Getting Started
 
-First of all you have to select your retry mode
-Hovercat has two retry modes:
+First of all you have to genereate a configuration file
 
-Redis
-Memory
+You can generate de configuration file running the following command:
 
-You can generate de configuration file running the following commands:
-
-```sh
-$ hovercat redis_store
-```
-or
 ```sh
 $ hovercat memory_store
 ```
 
-It will genereate a configuration file like this:
+It will generate a configuration file like this:
 
 ```rb
 hovercat:
@@ -55,3 +43,31 @@ hovercat:
     retry_attempts: 3
     retry_delay_in_seconds: 600
 ```
+
+### If you have old version of hovervat and would like to upgrade
+
+1 - Execute
+```sh
+bundle update hovercat
+```
+2 - Change your message model
+from:
+```ruby
+Hovercat::Message
+Hovercat::MessageGateway
+Hovercat::UnableToSendMessageError
+```
+to:
+```ruby
+Hovercat::Models::Message
+Hovercat::Gateways::MessageGateway
+Hovercat::Errors::UnableToSendMessageError
+```
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
