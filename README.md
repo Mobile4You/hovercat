@@ -2,6 +2,10 @@
 [![codebeat badge](https://codebeat.co/badges/fc8d0613-78eb-45a4-83d8-197a167115cd)](https://codebeat.co/projects/github-com-mobile4you-hovercat)
 [![Build Status](https://travis-ci.org/Mobile4You/hovercat.svg?branch=master)](https://travis-ci.org/Mobile4You/hovercat)
 
+<p align="center">
+  <img src="https://vignette.wikia.nocookie.net/thundercats/images/f/f2/Vlcsnap-2014-03-22-17h39m23s39.jpg/revision/latest?cb=20140322214308" alt="Hovercat"/>
+</p>
+
 # Hovercat is a client for Rabbitmq 
 Your focuses on ease of use. It focus on 
 to retry send message when message broker is down
@@ -43,7 +47,31 @@ hovercat:
     retry_attempts: 3
     retry_delay_in_seconds: 600
 ```
+You can specify rabbitmq configurations in configuration file or via params in `Hovercat::Sender.publish`
 
+Creating hovercat message is very simple, you only have to extend `Hovercat::Models::Message`:
+
+Example:
+```rb
+  class Message < Hovercat::Models::Message
+    def initialize(name:, email:)
+      super('my.routing.key.name')
+    
+      add resource: name, as: :name
+      add resource: email, as: :email
+    end
+  end
+```
+
+To send a message, you have to use `Hovercat::Sender.publish`:
+
+Example:
+```rb
+  message = Message.new(name: 'My name', email: 'myemail@example.com')
+  params = { message: message, exchange: 'my-exchange', header: { 'header-example': 'my-header'} }
+  Hovercat::Sender.publish(header: {}, message: message)
+```
+If you use exchange via param, it has precedence over exchange name in configuration file
 ### If you have old version of hovervat and would like to upgrade
 
 1 - Execute
@@ -51,6 +79,7 @@ hovercat:
 bundle update hovercat
 ```
 2 - Change your message model
+
 from:
 ```ruby
 Hovercat::Message
