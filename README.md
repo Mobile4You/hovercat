@@ -69,7 +69,7 @@ Example:
 ```rb
   message = Message.new(name: 'My name', email: 'myemail@example.com')
   params = { message: message, exchange: 'my-exchange', header: { 'header-example': 'my-header'} }
-  Hovercat::Sender.publish(header: {}, message: message)
+  Hovercat::Sender.publish(params)
 ```
 If you use exchange via param, it has precedence over exchange name in configuration file
 ### If you have old version of hovervat and would like to upgrade
