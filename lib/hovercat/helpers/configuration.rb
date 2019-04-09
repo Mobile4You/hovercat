@@ -10,9 +10,32 @@ module Hovercat
       attr_reader :configuration
 
       def initialize
-        @configuration = YAML.load_file(Constants::REDIS_CONFIGURATION_FILE) if File.exist?(Constants::REDIS_CONFIGURATION_FILE)
-        @configuration = YAML.load_file(Constants::MEMORY_CONFIGURATION_FILE) if File.exist?(Constants::MEMORY_CONFIGURATION_FILE)
-        raise Hovercat::Errors::MissingConfigurationFileError, 'Missing hovercat configuration file' if @configuration.nil?
+        @configuration = load_config
+        validate_config!
+      end
+
+      private
+
+      def load_config
+        memory_file_path = Hovercat::Constants::MEMORY_CONFIGURATION_FILE
+        redis_file_path = Hovercat::Constants::REDIS_CONFIGURATION_FILE
+        whitelist_classes = []
+        whitelist_symbols = []
+        aliases = true
+
+        if File.exist?(redis_file_path)
+          YAML.safe_load(ERB.new(File.read(redis_file_path)).result, whitelist_classes, whitelist_symbols, aliases)[environment]
+        elsif File.exist?(memory_file_path)
+          YAML.safe_load(ERB.new(File.read(memory_file_path)).result, whitelist_classes, whitelist_symbols, aliases)[environment]
+        end
+      end
+
+      def environment
+        ENV['RAILS_ENV'] || ENV['RACK_ENV'] || 'test'
+      end
+
+      def validate_config!
+        raise Hovercat::Errors::MissingConfigurationFileError, 'Missing hovercat configuration' if @configuration.nil?
       end
     end
   end

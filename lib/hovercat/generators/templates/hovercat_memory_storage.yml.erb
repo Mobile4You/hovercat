@@ -1,11 +1,37 @@
-hovercat:
-  rabbitmq:
-    host: 'localhost'
-    port: 5672
-    exchange: ''
-    vhost: '/'
-    user: 'guest'
-    password: 'guest'
-  retries_in_rabbit_mq:
-    retry_attempts: 3
-    retry_delay_in_seconds: 600
+rabbitmq: &rabbitmq_defaults
+  host: <%= ENV['AMQP_HOST'] || ['localhost'] %>
+  port: <%= ENV['AMQP_PORT'] || 5672 %>
+  exchange: <%= ENV['AMQP_EXCHANGE'] || '' %>
+  vhost: <%= ENV['AMQP_VHOST'] || '/' %>
+  user: <%= ENV['AMQP_USER'] || 'guest' %>
+  password: <%= ENV['AMQP_PWD'] || 'guest' %>
+  log_level: 2
+  log_filename: rabbitmq.log
+  log_age: daily
+
+retries_in_rabbit_mq: &retries_defaults
+  retry_attempts: 3
+  retry_delay_in_seconds: 600
+
+development:
+  hovercat:
+    rabbitmq:
+      <<: *rabbitmq_defaults
+      host: ['localhost']
+    retries_in_rabbit_mq:
+      <<: *retries_defaults
+
+test:
+  hovercat:
+    rabbitmq:
+      <<: *rabbitmq_defaults
+      host: ['localhost']
+    retries_in_rabbit_mq:
+      <<: *retries_defaults
+
+production:
+  hovercat:
+    rabbitmq:
+      <<: *rabbitmq_defaults
+    retries_in_rabbit_mq:
+      <<: *retries_defaults

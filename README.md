@@ -7,8 +7,7 @@
 </p>
 
 # Hovercat is a client for Rabbitmq 
-Your focuses on ease of use. It focus on 
-to retry send message when message broker is down
+It will retry sending messages when the message broker is down.
 
 ## Supported RabbitMQ Versions
 
@@ -24,32 +23,23 @@ gem 'hovercat', git: 'https://github.com/Mobile4You/hovercat.git'
 
 ### Getting Started
 
-First of all you have to genereate a configuration file
-
-You can generate de configuration file running the following command:
+1 - First of all you have to generate a configuration file, with this command:
 
 ```sh
 $ hovercat memory_store
 ```
 
-It will generate a configuration file like this:
+You could also use redis store:
 
-```rb
-hovercat:
-  rabbitmq:
-    host: 'localhost'
-    port: 5672
-    exchange: ''
-    vhost: '/'
-    user: 'guest'
-    password: 'guest'
-  retries_in_rabbit_mq:
-    retry_attempts: 3
-    retry_delay_in_seconds: 600
+```sh
+$ hovercat redis_store
 ```
-You can specify rabbitmq configurations in configuration file or via params in `Hovercat::Sender.publish`
 
-Creating hovercat message is very simple, you only have to extend `Hovercat::Models::Message`:
+The configuration file will be generated inside the `./config` dir.
+
+You can also send the rabbitmq configurations via params to `Hovercat::Sender.publish`
+
+2 - Creating hovercat message is very simple, you only have to extend `Hovercat::Models::Message`:
 
 Example:
 ```rb
@@ -63,7 +53,7 @@ Example:
   end
 ```
 
-To send a message, you have to use `Hovercat::Sender.publish`:
+3 - To send a message, you have to use `Hovercat::Sender.publish`:
 
 Example:
 ```rb
@@ -71,8 +61,9 @@ Example:
   params = { message: message, exchange: 'my-exchange', header: { 'header-example': 'my-header'} }
   Hovercat::Sender.publish(params)
 ```
-If you use exchange via param, it has precedence over exchange name in configuration file
-### If you have old version of hovervat and would like to upgrade
+If you use exchange via param, it has precedence over exchange name in configuration file.
+
+### If you have an old version of hovercat and would like to upgrade:
 
 1 - Execute
 ```sh
@@ -92,6 +83,8 @@ Hovercat::Models::Message
 Hovercat::Gateways::MessageGateway
 Hovercat::Errors::UnableToSendMessageError
 ```
+
+3 - You may also need to re-generate the configuration file, since the configuration is now defined per environment (development, test, production, etc).
 
 ## Contributing
 
