@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    hovercat (0.3.0)
+    hovercat (1.0.0)
       bunny (>= 2.5.1, <= 2.6.0)
       sucker_punch (~> 2.0)
       thor
@@ -109,4 +109,4 @@ DEPENDENCIES
   webmock
 
 BUNDLED WITH
-   2.0.1
+   1.17.2
