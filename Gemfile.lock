@@ -2,14 +2,14 @@ PATH
   remote: .
   specs:
     hovercat (1.0.0)
-      bunny (>= 2.5.1, <= 2.6.0)
+      bunny (~> 2.13.0)
       sucker_punch (~> 2.0)
       thor
 
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (5.2.2.1)
+    activesupport (5.2.3)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
@@ -19,8 +19,8 @@ GEM
     amq-protocol (2.3.0)
     ast (2.4.0)
     builder (3.2.3)
-    bunny (2.6.0)
-      amq-protocol (>= 2.0.1)
+    bunny (2.13.0)
+      amq-protocol (~> 2.3, >= 2.3.0)
     ci_reporter (2.0.0)
       builder (>= 2.1.2)
     ci_reporter_rspec (1.0.0)
@@ -40,8 +40,8 @@ GEM
     jaro_winkler (1.5.2)
     json (2.2.0)
     minitest (5.11.3)
-    parallel (1.14.0)
-    parser (2.6.0.0)
+    parallel (1.17.0)
+    parser (2.6.2.1)
       ast (~> 2.4.0)
     psych (3.1.0)
     public_suffix (3.0.3)
@@ -60,7 +60,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.0)
-    rubocop (0.66.0)
+    rubocop (0.67.2)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
       parser (>= 2.5, != 2.5.1.1)
@@ -70,6 +70,8 @@ GEM
       unicode-display_width (>= 1.4.0, < 1.6)
     rubocop-checkstyle_formatter (0.4.0)
       rubocop (>= 0.35.1)
+    rubocop-performance (1.1.0)
+      rubocop (>= 0.67.0)
     ruby-progressbar (1.10.0)
     safe_yaml (1.0.5)
     simplecov (0.16.1)
@@ -95,7 +97,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.16)
+  bundler (~> 2.0.1)
   ci_reporter_rspec
   factory_bot
   fakefs
@@ -104,6 +106,7 @@ DEPENDENCIES
   rspec (~> 3.0)
   rubocop
   rubocop-checkstyle_formatter
+  rubocop-performance
   simplecov
   simplecov-rcov
   webmock
