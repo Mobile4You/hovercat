@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   s.test_files    = s.files.grep(%r{^(test|spec|features)/})
   s.require_paths = ['lib']
 
-  s.add_development_dependency 'bundler', '~> 1.16'
+  s.add_development_dependency 'bundler', '~> 2.0.1'
   s.add_development_dependency 'ci_reporter_rspec'
   s.add_development_dependency 'factory_bot'
   s.add_development_dependency 'fakefs'
@@ -30,11 +30,12 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rspec', '~> 3.0'
   s.add_development_dependency 'rubocop'
   s.add_development_dependency 'rubocop-checkstyle_formatter'
+  s.add_development_dependency 'rubocop-performance'
   s.add_development_dependency 'simplecov'
   s.add_development_dependency 'simplecov-rcov'
   s.add_development_dependency 'webmock'
 
-  s.add_dependency 'bunny', '>= 2.5.1', '<= 2.6.0'
+  s.add_dependency 'bunny', '~> 2.13.0'
   s.add_dependency 'sucker_punch', '~> 2.0'
   s.add_dependency 'thor'
 end
