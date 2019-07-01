@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    hovercat (1.0.0)
+    hovercat (1.1.0)
       bunny (~> 2.13.0)
       sucker_punch (~> 2.0)
       thor
