@@ -12,14 +12,15 @@ module Hovercat
       end
 
       def publish(params)
-        exchange = @connection.channel.topic(exchange_name(params), durable: true)
+        channel = @connection.channel
+        exchange = channel.topic(exchange_name(params), durable: true)
         exchange.publish(params[:payload], routing_key: params[:routing_key], headers: params[:headers])
       rescue Timeout::Error => e
         raise Hovercat::Errors::UnexpectedError, e.message
       rescue StandardError => e
         raise Hovercat::Errors::UnexpectedError, e.message
       ensure
-        @connection.close_channel
+        @connection.close_channel(channel)
       end
 
       private
