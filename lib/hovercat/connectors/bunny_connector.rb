@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'bunny'
 require 'hovercat'
 require 'hovercat/errors/unexpected_error'
@@ -17,6 +18,8 @@ module Hovercat
         raise Hovercat::Errors::UnexpectedError, e.message
       rescue StandardError => e
         raise Hovercat::Errors::UnexpectedError, e.message
+      ensure
+        @connection.close_channel
       end
 
       private
