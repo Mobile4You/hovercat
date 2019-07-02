@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'bunny'
 require 'singleton'
 
@@ -16,6 +17,10 @@ module Hovercat
         @channel = @connection.create_channel unless @channel.open?
 
         @channel
+      end
+
+      def close_channel
+        @channel.close
       end
 
       def self.reset!
