@@ -19,8 +19,8 @@ module Hovercat
         @channel
       end
 
-      def close_channel
-        @channel.close
+      def close_channel(channel)
+        @channel.close_channel(channel)
       end
 
       def self.reset!
