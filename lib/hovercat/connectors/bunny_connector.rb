@@ -7,9 +7,6 @@ require 'hovercat/errors/unexpected_error'
 module Hovercat
   module Connectors
     class BunnyConnector
-      def initialize
-        @connection = Hovercat::Connectors::RabbitMQConnection.instance.connection
-      end
 
       def publish(params)
         channel = Hovercat::Connectors::RabbitMQConnection.instance.channel

@@ -7,10 +7,10 @@ module Hovercat
   module Connectors
     class RabbitMQConnection
       include Singleton
-      attr_reader :connection
 
       def initialize
         @connection = Bunny.new(bunny_params).start
+        @channel = @connection.create_channel
       end
 
       def channel
@@ -19,13 +19,6 @@ module Hovercat
         @channel
       end
 
-      def close_channel(channel)
-        @channel.close_channel(channel)
-      end
-
-      def self.reset!
-        @connection = nil
-      end
 
       private
 
