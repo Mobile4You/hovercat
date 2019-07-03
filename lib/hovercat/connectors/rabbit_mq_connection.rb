@@ -2,6 +2,7 @@
 
 require 'bunny'
 require 'singleton'
+require 'connection_pool'
 
 module Hovercat
   module Connectors
@@ -13,7 +14,7 @@ module Hovercat
       end
 
       def channel_pool
-        @channel_pool ||= ConnectionPool.new do
+        @channel_pool ||= ::ConnectionPool.new do
           @connection.create_channel
         end
       end
