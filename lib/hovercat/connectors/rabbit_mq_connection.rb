@@ -10,15 +10,13 @@ module Hovercat
 
       def initialize
         @connection = Bunny.new(bunny_params).start
-        @channel = @connection.create_channel
       end
 
-      def channel
-        @channel = @connection.create_channel unless !@channel.nil? && @channel.open?
-
-        @channel
+      def channel_pool
+        @channel_pool ||= ConnectionPool.new do
+          @connection.create_channel
+        end
       end
-
 
       private
 
