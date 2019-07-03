@@ -7,20 +7,17 @@ require 'hovercat/errors/unexpected_error'
 module Hovercat
   module Connectors
     class BunnyConnector
-      def initialize
-        @connection = Hovercat::Connectors::RabbitMQConnection.instance.connection
-      end
-
       def publish(params)
-        channel = @connection.channel
-        exchange = channel.topic(exchange_name(params), durable: true)
-        exchange.publish(params[:payload], routing_key: params[:routing_key], headers: params[:headers])
+        pool = Hovercat::Connectors::RabbitMQConnection.instance.channel_pool
+
+        pool.with do |channel|
+          exchange = channel.topic(exchange_name(params), durable: true)
+          exchange.publish(params[:payload], routing_key: params[:routing_key], headers: params[:headers])
+        end
       rescue Timeout::Error => e
         raise Hovercat::Errors::UnexpectedError, e.message
       rescue StandardError => e
         raise Hovercat::Errors::UnexpectedError, e.message
-      ensure
-        @connection.close_channel(channel)
       end
 
       private
