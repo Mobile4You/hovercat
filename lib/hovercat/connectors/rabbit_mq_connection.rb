@@ -14,7 +14,7 @@ module Hovercat
       end
 
       def channel
-        @channel = @connection.create_channel unless @channel.open?
+        @channel = @connection.create_channel unless !@channel.nil? && @channel.open?
 
         @channel
       end
