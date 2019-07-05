@@ -10,7 +10,7 @@ require 'bunny'
 RSpec.describe Hovercat::Gateways::MessageGateway do
   let(:publisher) { double('Hovercat::Publishers::Publisher') }
   let(:message) { double('message', to_json: 'message_json', routing_key: 'message_routing_key') }
-  subject { Hovercat::Gateways::MessageGateway.send(headers: headers, exchange: exchange, publisher: publisher, message: message) }
+  subject { Hovercat::Gateways::MessageGateway.send(header: headers, exchange: exchange, publisher: publisher, message: message) }
 
   context 'Only event passed and successfully published' do
     let(:headers) { nil }
