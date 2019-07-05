@@ -10,7 +10,7 @@ module Hovercat
   module Gateways
     class MessageGateway
       def self.send(params)
-        headers = params[:headers] || {}
+        headers = params[:header] || {}
         exchange = params[:exchange] || Hovercat::CONFIG['hovercat']['rabbitmq']['exchange']
         publisher = params[:publisher] || Hovercat::Publishers::Publisher.new
         message = params[:message]
