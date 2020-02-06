@@ -5,6 +5,7 @@ require 'hovercat/publishers/publisher'
 require 'hovercat/errors/unable_to_send_message_error'
 require 'json'
 require 'hovercat/factories/retry_message_job_factory'
+require 'hovercat/helpers/sender_message_logger_helper'
 
 module Hovercat
   module Gateways
@@ -27,51 +28,18 @@ module Hovercat
         private
 
         def send_message(publisher, message_attributes)
-          raise StandardError, "Erro"
-          return log_success(message_attributes) if publisher.publish(message_attributes).ok?
+          return Hovercat::Helpers::SenderMessageLoggerHelper.log_success(message_attributes) if publisher.publish(message_attributes).ok?
 
-          log_will_retry(message_attributes)
+          Hovercat::Helpers::SenderMessageLoggerHelper.log_will_retry(message_attributes)
           handle_retry(message_attributes)
-        rescue StandardError => error
-          puts "AAAAAAAAAAA"
+        rescue StandardError => e
           # raise Hovercat::Errors::UnableToSendMessageError, e.message
-          log_error(error, message_attributes)
+          Hovercat::Helpers::SenderMessageLoggerHelper.log_error(e, message_attributes)
           handle_retry(message_attributes)
         end
 
         def handle_retry(message_attributes)
-          retry_delay_in_seconds = Hovercat::CONFIG['hovercat']['retries_in_rabbit_mq']['retry_delay_in_seconds']
-          Hovercat::Factories::RetryMessageJobFactory.for.perform_later(retry_delay_in_seconds, message_attributes)
-        end
-
-        def log_success(message_attributes)
-          message = 'Hovercat published message successfully'
-          log(message, message_attributes)
-        end
-
-        def log_will_retry(message_attributes)
-          message = 'Hovercat could not published message successfully and will retry'
-          log(message, message_attributes)
-        end
-
-        def log_error(error, message_attributes)
-          message = "An error [#{error.message}] occurred while sending message. Hovercat will retry."
-          Hovercat.logger.error(log_params(message, message_attributes))
-        end
-
-        def log(message, message_attributes)
-          Hovercat.logger.info(log_params(message, message_attributes))
-        end
-
-
-        def log_params(message, message_attributes)
-          {
-            message: message,
-            path: 'Hovercat::Gateways::MessageGateway',
-            method: 'send',
-            call: "Hovercat::Publishers::Publisher.new.publish",
-            params: message_attributes
-          }
+          Hovercat::Factories::RetryMessageJobFactory.for(message_attributes).retry
         end
       end
     end

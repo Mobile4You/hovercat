@@ -2,6 +2,7 @@
 
 require 'hovercat'
 require 'sidekiq'
+require 'hovercat/helpers/redis_retry_message_logger_helper'
 
 module Hovercat
   module Workers
@@ -9,11 +10,10 @@ module Hovercat
       include Sidekiq::Worker
 
       sidekiq_retries_exhausted do |msg|
-         # TODO O que fazer neste caso?
-         message = 'Retry limit exceeded. Will not retry anymore.'
-         params = msg['args'][0]
-         puts "PARAMS >>>> #{params}"
-         log_warn(message, params)
+        # TODO: O que fazer neste caso?
+        message = 'Retry limit exceeded. Will not retry anymore.'
+        params = msg['args'][0]
+        Hovercat::Helpers::RedisRetryMessageLoggerHelper.log_warn(message, params)
       end
 
       sidekiq_retry_in do |_count, exception|
@@ -26,54 +26,20 @@ module Hovercat
       def perform(params)
         response = Hovercat::Publishers::Publisher.new.publish(convert_params(params))
         if response.ok?
-          log_retry_success(params)
+          Hovercat::Helpers::RedisRetryMessageLoggerHelper.log_success(params)
         else
-          log_retry_failed(params)
+          Hovercat::Helpers::RedisRetryMessageLoggerHelper.log_failed(params)
           raise Hovercat::Errors::UnableToSendMessageError
         end
-      rescue StandardError => error
-        # TODO O que fazer neste caso?
-        log_error(error, params)
+      rescue StandardError => e
+        # TODO: O que fazer neste caso?
+        Hovercat::Helpers::RedisRetryMessageLoggerHelper.log_error(e, params)
       end
 
       def convert_params(params)
         {
-          payload: params['payload'],
-          headers: params['headers'], routing_key: params['routing_key'],
-          exchange: params['exchange']
-        }
-      end
-
-      def log_retry_success(params)
-        message = 'Hovercat retried and sent message successfully'
-        log(message, params)
-      end
-
-      def log_retry_failed(params)
-        message = 'Hovercat failed retrying to send message and will retry again'
-        log(message, params)
-      end
-
-      def log_error(error, params)
-        message = "An error [#{error.message}] occurred while retrying to send. message. Hovercat will not retry again."
-        Hovercat.logger.error(log_params(message, params))
-      end
-
-      def log_warn(message, params)
-        Hovercat.logger.warn(log_params(message, params))
-      end
-
-      def log(message, params)
-        Hovercat.logger.info(log_params(message, params))
-      end
-
-      def log_params(message, params)
-        {
-          message: message,
-          path: 'Hovercat::Workers::RedisRetryMessageWorker',
-          method: 'perform',
-          call: "Hovercat::Publishers::Publisher.new.publish",
-          params: params
+          payload: params['payload'], headers: params['headers'],
+          exchange: params['exchange'], routing_key: params['routing_key']
         }
       end
     end

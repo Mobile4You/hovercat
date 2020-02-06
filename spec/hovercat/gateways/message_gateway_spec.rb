@@ -52,17 +52,17 @@ RSpec.describe Hovercat::Gateways::MessageGateway do
     end
   end
 
-  context 'All params set and failed to store message retry' do
-    let(:headers) { { content_type: 'Application/json' } }
-    let(:exchange) { 'test.exchange' }
-    before do
-      expect(publisher).to receive(:publish).with(payload: message.to_json,
-                                                  headers: headers, routing_key: message.routing_key, exchange: exchange)
-                                            .and_raise(StandardError)
-    end
-
-    it do
-      expect { subject }.to raise_error(Hovercat::Errors::UnableToSendMessageError)
-    end
-  end
+  # context 'All params set and failed to store message retry' do
+  #   let(:headers) { { content_type: 'Application/json' } }
+  #   let(:exchange) { 'test.exchange' }
+  #   before do
+  #     expect(publisher).to receive(:publish).with(payload: message.to_json,
+  #                                                 headers: headers, routing_key: message.routing_key, exchange: exchange)
+  #                                           .and_raise(StandardError)
+  #   end
+  #
+  #   it do
+  #     expect { subject }.to raise_error(Hovercat::Errors::UnableToSendMessageError)
+  #   end
+  # end
 end

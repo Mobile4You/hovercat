@@ -8,10 +8,10 @@ module Hovercat
   module Factories
     class RetryMessageJobFactory
       class << self
-        def for
-          return Hovercat::Jobs::RedisRetryMessagesSenderJob if redis_retry?
+        def for(data)
+          return Hovercat::Jobs::RedisRetryMessagesSenderJob.new(data) if redis_retry?
 
-          Hovercat::Jobs::MemoryRetryMessagesSenderJob
+          Hovercat::Jobs::MemoryRetryMessagesSenderJob.new(data)
         end
 
         private
