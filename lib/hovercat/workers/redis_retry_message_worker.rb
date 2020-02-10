@@ -1,8 +1,10 @@
 # frozen_string_literal: true
 
 require 'hovercat'
-require 'sidekiq'
 require 'hovercat/helpers/redis_retry_message_logger_helper'
+require 'hovercat/errors/unable_to_send_message_error'
+require 'hovercat/publishers/publisher'
+require 'sidekiq'
 
 module Hovercat
   module Workers
@@ -16,11 +18,8 @@ module Hovercat
         Hovercat::Helpers::RedisRetryMessageLoggerHelper.log_warn(message, params)
       end
 
-      sidekiq_retry_in do |_count, exception|
-        case exception
-        when Hovercat::Errors::UnableToSendMessageError
-          Hovercat::CONFIG['hovercat']['retries_in_rabbit_mq']['retry_delay_in_seconds'] || 600
-        end
+      sidekiq_retry_in do |_count, _exception|
+        Hovercat::CONFIG['hovercat']['retries_in_rabbit_mq']['retry_delay_in_seconds'] || 600
       end
 
       def perform(params)
@@ -31,9 +30,6 @@ module Hovercat
           Hovercat::Helpers::RedisRetryMessageLoggerHelper.log_failed(params)
           raise Hovercat::Errors::UnableToSendMessageError
         end
-      rescue StandardError => e
-        # TODO: O que fazer neste caso?
-        Hovercat::Helpers::RedisRetryMessageLoggerHelper.log_error(e, params)
       end
 
       def convert_params(params)

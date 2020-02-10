@@ -10,7 +10,7 @@ module Hovercat
       def initialize(data = {})
         super
         @queue_name = Hovercat::CONFIG['hovercat']['redis']['retry_queue_name']&.to_sym || :default
-        @retry_attemps = Hovercat::CONFIG['hovercat']['retries_in_rabbit_mq']['retry_attempts'] || 0
+        @retry_attempts = Hovercat::CONFIG['hovercat']['retries_in_rabbit_mq']['retry_attempts'] || 0
       end
 
       private

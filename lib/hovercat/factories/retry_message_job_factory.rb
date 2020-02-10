@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
+require 'hovercat'
 require 'hovercat/jobs/memory_retry_messages_sender_job'
 require 'hovercat/jobs/redis_retry_messages_sender_job'
-require 'hovercat'
 
 module Hovercat
   module Factories

@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
+require 'json'
 require 'hovercat'
 require 'hovercat/publishers/publisher'
 require 'hovercat/errors/unable_to_send_message_error'
-require 'json'
 require 'hovercat/factories/retry_message_job_factory'
 require 'hovercat/helpers/sender_message_logger_helper'
 
@@ -33,7 +33,6 @@ module Hovercat
           Hovercat::Helpers::SenderMessageLoggerHelper.log_will_retry(message_attributes)
           handle_retry(message_attributes)
         rescue StandardError => e
-          # raise Hovercat::Errors::UnableToSendMessageError, e.message
           Hovercat::Helpers::SenderMessageLoggerHelper.log_error(e, message_attributes)
           handle_retry(message_attributes)
         end
