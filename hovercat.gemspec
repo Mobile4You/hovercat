@@ -35,6 +35,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'simplecov-rcov'
   s.add_development_dependency 'webmock'
 
+  s.add_dependency 'activesupport'
   s.add_dependency 'bunny', '~> 2.13.0'
   s.add_dependency 'connection_pool'
   s.add_dependency 'sidekiq'

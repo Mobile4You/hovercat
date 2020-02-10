@@ -11,11 +11,10 @@ module Hovercat
     class RedisRetryMessageWorker
       include Sidekiq::Worker
 
-      sidekiq_retries_exhausted do |msg|
-        # TODO: O que fazer neste caso?
+      sidekiq_retries_exhausted do |params|
+        # TODO: What do we have to do in this case?
         message = 'Retry limit exceeded. Will not retry anymore.'
-        params = msg['args'][0]
-        Hovercat::Helpers::RedisRetryMessageLoggerHelper.log_warn(message, params)
+        Hovercat::Helpers::RedisRetryMessageLoggerHelper.log_warn(message, params['args'][0])
       end
 
       sidekiq_retry_in do |_count, _exception|

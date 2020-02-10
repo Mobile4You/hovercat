@@ -7,10 +7,12 @@ require 'hovercat/workers/redis_retry_message_worker'
 module Hovercat
   module Jobs
     class RedisRetryMessagesSenderJob < HovercatRetryMessagesSenderJob
+      attr_reader :queue_name, :retry_attempts
+
       def initialize(data = {})
         super
-        @queue_name = Hovercat::CONFIG['hovercat']['redis']['retry_queue_name']&.to_sym || :default
-        @retry_attempts = Hovercat::CONFIG['hovercat']['retries_in_rabbit_mq']['retry_attempts'] || 0
+        @queue_name = Hovercat::CONFIG.dig('hovercat', 'redis', 'retry_queue_name')&.to_sym || :default
+        @retry_attempts = Hovercat::CONFIG.dig('hovercat', 'retries_in_rabbit_mq', 'retry_attempts') || 0
       end
 
       private

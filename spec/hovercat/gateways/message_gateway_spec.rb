@@ -16,6 +16,10 @@ RSpec.describe Hovercat::Gateways::MessageGateway do
     let(:headers) { nil }
     let(:exchange) { nil }
 
+    before do
+      expect(Hovercat::Helpers::SenderMessageLoggerHelper).to receive(:log_success).once
+    end
+
     it do
       expect(publisher).to receive(:publish)
         .with(payload: message.to_json, headers: {}, routing_key: message.routing_key,
@@ -29,6 +33,10 @@ RSpec.describe Hovercat::Gateways::MessageGateway do
     let(:headers) { { content_type: 'Application/json' } }
     let(:exchange) { 'test.exchange' }
 
+    before do
+      expect(Hovercat::Helpers::SenderMessageLoggerHelper).to receive(:log_success).once
+    end
+
     it do
       expect(publisher).to receive(:publish).with(payload: message.to_json,
                                                   headers: headers, routing_key: message.routing_key, exchange: exchange)
@@ -37,32 +45,54 @@ RSpec.describe Hovercat::Gateways::MessageGateway do
     end
   end
 
-  context 'All params set and successfully stored to retry' do
+  context 'All params set and successfully stored to retry in memory' do
     let(:headers) { { content_type: 'Application/json' } }
     let(:exchange) { 'test.exchange' }
+    let(:sucker_punch_job) { Hovercat::Jobs::MemoryRetryMessagesSenderJob.new({}) }
+
     before do
+      allow(Hovercat::Factories::RetryMessageJobFactory).to receive(:for).and_return(sucker_punch_job)
       expect(publisher).to receive(:publish).with(payload: message.to_json, headers: headers,
                                                   routing_key: message.routing_key, exchange: exchange)
                                             .and_return(Hovercat::Models::PublishFailureResponse.new)
-      subject
+      expect(Hovercat::Helpers::SenderMessageLoggerHelper).to receive(:log_will_retry).once
+      expect(sucker_punch_job).to receive(:retry).once
     end
 
-    it do
-      expect(subject).to be_truthy
-    end
+    it { expect(subject).to be_nil }
   end
 
-  # context 'All params set and failed to store message retry' do
-  #   let(:headers) { { content_type: 'Application/json' } }
-  #   let(:exchange) { 'test.exchange' }
-  #   before do
-  #     expect(publisher).to receive(:publish).with(payload: message.to_json,
-  #                                                 headers: headers, routing_key: message.routing_key, exchange: exchange)
-  #                                           .and_raise(StandardError)
-  #   end
-  #
-  #   it do
-  #     expect { subject }.to raise_error(Hovercat::Errors::UnableToSendMessageError)
-  #   end
-  # end
+  context 'All params set and successfully stored to retry in redis' do
+    let(:headers) { { content_type: 'Application/json' } }
+    let(:exchange) { 'test.exchange' }
+    let(:redis_retry_job) { Hovercat::Jobs::RedisRetryMessagesSenderJob.new({}) }
+
+    before do
+      allow(Hovercat::Factories::RetryMessageJobFactory).to receive(:for).and_return(redis_retry_job)
+      expect(publisher).to receive(:publish).with(payload: message.to_json, headers: headers,
+                                                  routing_key: message.routing_key, exchange: exchange)
+                                            .and_return(Hovercat::Models::PublishFailureResponse.new)
+      expect(Hovercat::Helpers::SenderMessageLoggerHelper).to receive(:log_will_retry).once
+      expect(redis_retry_job).to receive(:retry).once
+    end
+
+    it { expect(subject).to be_nil }
+  end
+
+  context 'when StandardError occurred and retry with redis' do
+    let(:headers) { { content_type: 'Application/json' } }
+    let(:exchange) { 'test.exchange' }
+    let(:redis_retry_job) { Hovercat::Jobs::RedisRetryMessagesSenderJob.new({}) }
+
+    before do
+      allow(Hovercat::Factories::RetryMessageJobFactory).to receive(:for).and_return(redis_retry_job)
+      expect(publisher).to receive(:publish).with(payload: message.to_json,
+                                                  headers: headers, routing_key: message.routing_key, exchange: exchange)
+                                            .and_raise(StandardError)
+      expect(Hovercat::Helpers::SenderMessageLoggerHelper).to receive(:log_error).once
+      expect(redis_retry_job).to receive(:retry).once
+    end
+
+    it { expect(subject).to be_nil }
+  end
 end

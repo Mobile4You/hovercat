@@ -5,9 +5,11 @@ require 'hovercat'
 module Hovercat
   module Jobs
     class HovercatRetryMessagesSenderJob
+      attr_reader :data, :seconds
+
       def initialize(data = {})
         @data = data
-        @seconds = Hovercat::CONFIG['hovercat']['retries_in_rabbit_mq']['retry_delay_in_seconds'] || 600
+        @seconds = Hovercat::CONFIG.dig('hovercat', 'retries_in_rabbit_mq', 'retry_delay_in_seconds') || 600
       end
 
       def retry
