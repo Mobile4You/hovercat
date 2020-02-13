@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   s.test_files    = s.files.grep(%r{^(test|spec|features)/})
   s.require_paths = ['lib']
 
-  s.add_development_dependency 'bundler', '~> 2.0.1'
+  s.add_development_dependency 'bundler', '~> 2.1.4'
   s.add_development_dependency 'ci_reporter_rspec'
   s.add_development_dependency 'factory_bot'
   s.add_development_dependency 'fakefs'
@@ -39,6 +39,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'bunny', '~> 2.13.0'
   s.add_dependency 'connection_pool'
   s.add_dependency 'sidekiq'
+  s.add_dependency 'sidekiq-logstash'
   s.add_dependency 'sucker_punch', '~> 2.0'
   s.add_dependency 'thor'
 end

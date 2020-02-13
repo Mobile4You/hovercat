@@ -20,14 +20,14 @@ module Hovercat
 
       def log_error(error)
         message = "An error [#{error.message}] occurred while sending message. Hovercat will retry."
-        Hovercat.logger.error(log_params(message))
+        @logger.error(log_params(message))
         add_metric('event_posting_error_and_will_retry')
       end
 
       private
 
       def log(message)
-        Hovercat.logger.info(log_params(message))
+        @logger.info(log_params(message))
       end
 
       def log_params(message)

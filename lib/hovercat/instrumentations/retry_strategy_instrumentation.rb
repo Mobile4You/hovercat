@@ -7,7 +7,7 @@ module Hovercat
   module Instrumentations
     class RetryStrategyInstrumentation < Instrumentation
       def log_retry(logger_params, metric)
-        Hovercat.logger.info(logger_params)
+        @logger.info(logger_params)
         add_metric(metric)
       end
     end

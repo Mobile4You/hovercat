@@ -14,8 +14,12 @@ module Hovercat
       sidekiq_retries_exhausted do |params|
         # TODO: What do we have to do in this case?
         message = 'Retry limit exceeded. Will not retry anymore.'
-        # TODO: ajustar o message attributes
-        Hovercat::Instrumentations::RedisRetryMessageInstrumentation.new(message_attributes).log_warn(message, params['args'][0])
+        message_attributes = {
+          routing_key: params['args'][0]['routing_key'],
+          headers: params['args'][0]['headers'],
+          payload: params['args'][0]['payload']
+        }
+        Hovercat::Instrumentations::RedisRetryMessageInstrumentation.new(message_attributes).log_warn(message)
       end
 
       sidekiq_retry_in do |_count, _exception|
@@ -23,8 +27,9 @@ module Hovercat
       end
 
       def perform(params)
-        instrumentation = Hovercat::Instrumentations::RedisRetryMessageInstrumentation.new(params)
-        response = Hovercat::Publishers::Publisher.new.publish(convert_params(params))
+        converted_params = convert_params(params)
+        instrumentation = Hovercat::Instrumentations::RedisRetryMessageInstrumentation.new(converted_params)
+        response = Hovercat::Publishers::Publisher.new.publish(converted_params)
         if response.ok?
           instrumentation.log_success
         else

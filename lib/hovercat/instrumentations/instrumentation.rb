@@ -10,10 +10,11 @@ module Hovercat
         @routing_key = params.dig(:routing_key)
         @event_headers = params.dig(:headers)&.to_json
         @event_payload = params.dig(:payload)
+        @logger = Hovercat.logger
       end
 
       def add_metric(metric, extra_params = {})
-        Hovercat.logger.info(metric_params(metric).merge!(extra_params).compact)
+        @logger.info(metric_params(metric).merge!(extra_params).compact)
       end
 
       private

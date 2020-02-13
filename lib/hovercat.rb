@@ -21,10 +21,11 @@ module Hovercat
   CONFIG = Hovercat::Helpers::Configuration.new.configuration
 
   class << self
-    attr_accessor :logger
+    attr_accessor :logger, :sidekiq_logger
   end
 
   self.logger = Logger.new(STDOUT)
+  self.sidekiq_logger = Logger.new(STDOUT)
 
   class Sender
     def self.publish(params)

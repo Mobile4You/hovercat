@@ -6,6 +6,11 @@ require 'hovercat/instrumentations/instrumentation'
 module Hovercat
   module Instrumentations
     class RedisRetryMessageInstrumentation < Instrumentation
+      def initialize(params = {})
+        super
+        @logger = Hovercat.sidekiq_logger
+      end
+
       def log_success
         message = 'Hovercat retried and sent message successfully'
         log(message)
@@ -18,15 +23,15 @@ module Hovercat
         add_metric('event_retried_failed_and_will_retry', retry_type: 'redis')
       end
 
-      def log_warn(message, params)
-        Hovercat.logger.warn(log_params(message, params))
+      def log_warn(message)
+        @logger.warn(log_params(message, @message_attributes))
         add_metric('event_retried_limit_exceeded', retry_type: 'redis')
       end
 
       private
 
       def log(message)
-        Hovercat.logger.info(log_params(message, @message_attributes))
+        @logger.info(log_params(message, @message_attributes))
       end
 
       def log_params(message, params)
