@@ -5,7 +5,6 @@ require 'hovercat'
 require 'hovercat/publishers/publisher'
 require 'hovercat/errors/unable_to_send_message_error'
 require 'hovercat/factories/retry_message_job_factory'
-require 'hovercat/helpers/sender_message_logger_helper'
 require 'hovercat/instrumentations/sender_message_instrumentation'
 
 module Hovercat

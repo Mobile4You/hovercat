@@ -3,7 +3,6 @@
 require 'hovercat'
 require 'hovercat/publishers/publisher'
 require 'hovercat/workers/redis_retry_message_worker'
-require 'hovercat/helpers/redis_retry_message_logger_helper'
 require 'active_support'
 require 'active_support/core_ext'
 require 'sidekiq/testing'

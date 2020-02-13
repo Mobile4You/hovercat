@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'hovercat'
-require 'hovercat/helpers/redis_retry_message_logger_helper'
 require 'hovercat/instrumentations/redis_retry_message_instrumentation'
 require 'hovercat/errors/unable_to_send_message_error'
 require 'hovercat/publishers/publisher'
