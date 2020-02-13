@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'hovercat'
+require 'hovercat/instrumentations/retry_strategy_instrumentation'
 
 module Hovercat
   module Jobs
@@ -10,20 +11,21 @@ module Hovercat
       def initialize(data = {})
         @data = data
         @seconds = Hovercat::CONFIG.dig('hovercat', 'retries_in_rabbit_mq', 'retry_delay_in_seconds') || 600
+        @instrumentation = Hovercat::Instrumentations::RetryStrategyInstrumentation.new(@data)
       end
 
       def retry
-        log_retry
+        @instrumentation.log_retry(logger_params, metric)
         do_retry
       end
 
       private
 
-      def log_retry
-        Hovercat.logger.info(logger_params)
+      def logger_params
+        raise 'Must overwrite'
       end
 
-      def logger_params
+      def metric
         raise 'Must overwrite'
       end
 

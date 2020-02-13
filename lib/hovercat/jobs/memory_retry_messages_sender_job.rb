@@ -18,6 +18,10 @@ module Hovercat
         }
       end
 
+      def metric
+        'event_retry_memory_strategy'
+      end
+
       def do_retry
         Hovercat::Jobs::SuckerPunchJob.perform_in(@seconds, @data)
       end

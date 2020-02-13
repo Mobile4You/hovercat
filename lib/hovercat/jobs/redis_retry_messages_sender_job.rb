@@ -27,6 +27,10 @@ module Hovercat
         }
       end
 
+      def metric
+        'event_retry_redis_strategy'
+      end
+
       def do_retry
         Hovercat::Workers::RedisRetryMessageWorker
           .set(queue: @queue_name, retry: @retry_attempts)

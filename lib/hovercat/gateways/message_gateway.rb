@@ -6,6 +6,7 @@ require 'hovercat/publishers/publisher'
 require 'hovercat/errors/unable_to_send_message_error'
 require 'hovercat/factories/retry_message_job_factory'
 require 'hovercat/helpers/sender_message_logger_helper'
+require 'hovercat/instrumentations/sender_message_instrumentation'
 
 module Hovercat
   module Gateways
@@ -28,12 +29,13 @@ module Hovercat
         private
 
         def send_message(publisher, message_attributes)
-          return Hovercat::Helpers::SenderMessageLoggerHelper.log_success(message_attributes) if publisher.publish(message_attributes).ok?
+          instrumentation = Hovercat::Instrumentations::SenderMessageInstrumentation.new(message_attributes)
+          return instrumentation.log_success if publisher.publish(message_attributes).ok?
 
-          Hovercat::Helpers::SenderMessageLoggerHelper.log_will_retry(message_attributes)
+          instrumentation.log_will_retry
           handle_retry(message_attributes)
         rescue StandardError => e
-          Hovercat::Helpers::SenderMessageLoggerHelper.log_error(e, message_attributes)
+          instrumentation.log_error(e)
           handle_retry(message_attributes)
         end
 

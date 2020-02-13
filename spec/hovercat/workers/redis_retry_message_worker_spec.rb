@@ -29,7 +29,7 @@ RSpec.describe Hovercat::Workers::RedisRetryMessageWorker do
     let(:publisher_result) { Hovercat::Models::PublishSuccessfullyResponse.new }
 
     it do
-      expect(Hovercat::Helpers::RedisRetryMessageLoggerHelper).to receive(:log_success).with(data).once
+      expect_any_instance_of(Hovercat::Instrumentations::RedisRetryMessageInstrumentation).to receive(:log_success).once
       subject
     end
   end
@@ -38,7 +38,7 @@ RSpec.describe Hovercat::Workers::RedisRetryMessageWorker do
     let(:publisher_result) { Hovercat::Models::PublishFailureResponse.new }
 
     it do
-      expect(Hovercat::Helpers::RedisRetryMessageLoggerHelper).to receive(:log_failed).with(data).once
+      expect_any_instance_of(Hovercat::Instrumentations::RedisRetryMessageInstrumentation).to receive(:log_failed).once
       expect { subject }.to raise_error(Hovercat::Errors::UnableToSendMessageError)
     end
   end

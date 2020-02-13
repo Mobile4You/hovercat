@@ -17,7 +17,7 @@ RSpec.describe Hovercat::Gateways::MessageGateway do
     let(:exchange) { nil }
 
     before do
-      expect(Hovercat::Helpers::SenderMessageLoggerHelper).to receive(:log_success).once
+      expect_any_instance_of(Hovercat::Instrumentations::SenderMessageInstrumentation).to receive(:log_success).once
     end
 
     it do
@@ -34,7 +34,7 @@ RSpec.describe Hovercat::Gateways::MessageGateway do
     let(:exchange) { 'test.exchange' }
 
     before do
-      expect(Hovercat::Helpers::SenderMessageLoggerHelper).to receive(:log_success).once
+      expect_any_instance_of(Hovercat::Instrumentations::SenderMessageInstrumentation).to receive(:log_success).once
     end
 
     it do
@@ -55,7 +55,7 @@ RSpec.describe Hovercat::Gateways::MessageGateway do
       expect(publisher).to receive(:publish).with(payload: message.to_json, headers: headers,
                                                   routing_key: message.routing_key, exchange: exchange)
                                             .and_return(Hovercat::Models::PublishFailureResponse.new)
-      expect(Hovercat::Helpers::SenderMessageLoggerHelper).to receive(:log_will_retry).once
+      expect_any_instance_of(Hovercat::Instrumentations::SenderMessageInstrumentation).to receive(:log_will_retry).once
       expect(sucker_punch_job).to receive(:retry).once
     end
 
@@ -72,7 +72,7 @@ RSpec.describe Hovercat::Gateways::MessageGateway do
       expect(publisher).to receive(:publish).with(payload: message.to_json, headers: headers,
                                                   routing_key: message.routing_key, exchange: exchange)
                                             .and_return(Hovercat::Models::PublishFailureResponse.new)
-      expect(Hovercat::Helpers::SenderMessageLoggerHelper).to receive(:log_will_retry).once
+      expect_any_instance_of(Hovercat::Instrumentations::SenderMessageInstrumentation).to receive(:log_will_retry).once
       expect(redis_retry_job).to receive(:retry).once
     end
 
@@ -89,7 +89,7 @@ RSpec.describe Hovercat::Gateways::MessageGateway do
       expect(publisher).to receive(:publish).with(payload: message.to_json,
                                                   headers: headers, routing_key: message.routing_key, exchange: exchange)
                                             .and_raise(StandardError)
-      expect(Hovercat::Helpers::SenderMessageLoggerHelper).to receive(:log_error).once
+      expect_any_instance_of(Hovercat::Instrumentations::SenderMessageInstrumentation).to receive(:log_error).once
       expect(redis_retry_job).to receive(:retry).once
     end
 

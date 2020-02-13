@@ -20,7 +20,7 @@ RSpec.describe Hovercat::Jobs::MemoryRetryMessagesSenderJob do
   describe '.retry' do
     subject { sender_job.retry }
 
-    before { expect(Hovercat.logger).to receive(:info).once }
+    before { expect(Hovercat.logger).to receive(:info).exactly(2).times }
 
     it do
       subject
