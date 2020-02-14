@@ -1,7 +1,7 @@
 rabbitmq: &rabbitmq_defaults
   host: <%= ENV['AMQP_HOST'] || ['localhost'] %>
   port: <%= ENV['AMQP_PORT'] || 5672 %>
-  exchange: <%= ENV['AMQP_EXCHANGE'] || '' %>
+  exchange: <%= ENV['AMQP_EXCHANGE'] || 'thundercats.messages' %>
   vhost: <%= ENV['AMQP_VHOST'] || '/' %>
   user: <%= ENV['AMQP_USER'] || 'guest' %>
   password: <%= ENV['AMQP_PWD'] || 'guest' %>
