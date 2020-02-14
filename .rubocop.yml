@@ -4,30 +4,30 @@ AllCops:
   TargetRubyVersion: 2.4
   # Include common Ruby source files.
   Include:
-    - "**/*.gemspec"
-    - "**/*.podspec"
-    - "**/*.jbuilder"
-    - "**/*.rake"
-    - "**/*.opal"
-    - "**/Gemfile"
-    - "**/Rakefile"
-    - "lib/**/*"
-    - "spec/**/*"
+    - '**/*.gemspec'
+    - '**/*.podspec'
+    - '**/*.jbuilder'
+    - '**/*.rake'
+    - '**/*.opal'
+    - '**/Gemfile'
+    - '**/Rakefile'
+    - 'lib/**/*'
+    - 'spec/**/*'
   Exclude:
-    - "vendor/**/*"
-    - "bin/**/*"
-    - "db/**/*"
-    - "spec/factories/*"
-    - "eldorado-sdk.gemspec"
-    - "lib/hovercat/generators/templates/*"
-    - "lib/hovercat/models/message.rb"
+    - 'vendor/**/*'
+    - 'bin/**/*'
+    - 'db/**/*'
+    - 'spec/factories/*'
+    - 'eldorado-sdk.gemspec'
+    - 'lib/hovercat/generators/templates/*'
+    - 'lib/hovercat/models/message.rb'
 
 Style/Documentation:
-  Description: "Document classes and non-namespace modules."
+  Description: 'Document classes and non-namespace modules.'
   Enabled: false
 
 Metrics/BlockLength:
-  ExcludedMethods: ["describe", "context"]
+  ExcludedMethods: ['describe', 'context']
 
 Metrics/LineLength:
   Max: 140
