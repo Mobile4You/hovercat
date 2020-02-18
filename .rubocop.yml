@@ -38,8 +38,3 @@ Metrics/LineLength:
   URISchemes:
     - http
     - https
-Rails/HasAndBelongsToMany:
- Enabled: false
-
-Rails/HttpPositionalArguments:
- Enabled: false

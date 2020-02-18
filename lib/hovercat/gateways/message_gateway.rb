@@ -1,38 +1,47 @@
 # frozen_string_literal: true
 
+require 'json'
 require 'hovercat'
 require 'hovercat/publishers/publisher'
 require 'hovercat/errors/unable_to_send_message_error'
-require 'json'
 require 'hovercat/factories/retry_message_job_factory'
+require 'hovercat/instrumentations/sender_message_instrumentation'
 
 module Hovercat
   module Gateways
     class MessageGateway
-      def self.send(params)
-        headers = params[:header] || {}
-        exchange = params[:exchange] || Hovercat::CONFIG['hovercat']['rabbitmq']['exchange']
-        publisher = params[:publisher] || Hovercat::Publishers::Publisher.new
-        message = params[:message]
+      class << self
+        def send(params)
+          headers = params[:header] || {}
+          exchange = params[:exchange] || Hovercat::CONFIG['hovercat']['rabbitmq']['exchange']
+          publisher = params[:publisher] || Hovercat::Publishers::Publisher.new
+          message = params[:message]
 
-        message_attributes = {
-          payload: message.to_json,
-          headers: headers, routing_key: message.routing_key,
-          exchange: exchange
-        }
-        send_message(publisher, message_attributes)
-      end
-
-      def self.send_message(publisher, message_attributes)
-        unless publisher.publish(message_attributes).ok?
-          retry_delay_in_seconds = Hovercat::CONFIG['hovercat']['retries_in_rabbit_mq']['retry_delay_in_seconds']
-          Hovercat::Factories::RetryMessageJobFactory.for.perform_later(message_attributes, retry_delay_in_seconds)
+          message_attributes = {
+            payload: message.to_json,
+            headers: headers, routing_key: message.routing_key,
+            exchange: exchange
+          }
+          send_message(publisher, message_attributes)
         end
-      rescue StandardError => e
-        raise Hovercat::Errors::UnableToSendMessageError, e.message
-      end
 
-      private_class_method :send_message
+        private
+
+        def send_message(publisher, message_attributes)
+          instrumentation = Hovercat::Instrumentations::SenderMessageInstrumentation.new(message_attributes)
+          return instrumentation.log_success if publisher.publish(message_attributes).ok?
+
+          instrumentation.log_will_retry
+          handle_retry(message_attributes)
+        rescue StandardError => e
+          instrumentation.log_error(e)
+          handle_retry(message_attributes)
+        end
+
+        def handle_retry(message_attributes)
+          Hovercat::Factories::RetryMessageJobFactory.for(message_attributes).retry
+        end
+      end
     end
   end
 end

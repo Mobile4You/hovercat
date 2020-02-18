@@ -17,7 +17,7 @@ redis: &redis
   host: 'localhost'
   port: 6379
   db: 'hovercat'
-  retry_queue_name: 'default'
+  retry_queue_name: 'retry_queue_name'
 
 development:
   hovercat:
@@ -37,6 +37,7 @@ test:
       host: ['localhost']
     retries_in_rabbit_mq:
       <<: *retries_defaults
+      retry_delay_in_seconds: 30
     redis:
       <<: *redis
 
