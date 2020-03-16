@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    hovercat (1.2.0)
+    hovercat (1.2.1)
       activesupport
       bunny (~> 2.13.0)
       connection_pool
