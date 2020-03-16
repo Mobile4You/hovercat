@@ -6,7 +6,7 @@ module Hovercat
   module Instrumentations
     class Instrumentation
       def initialize(params = {})
-        @message_attributes = params
+        @message_attributes = params.to_json
         @routing_key = params.dig(:routing_key)
         @event_headers = params.dig(:headers)&.to_json
         @event_payload = params.dig(:payload)
